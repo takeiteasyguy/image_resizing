@@ -1,0 +1,15 @@
+amqp==2.1.1
+billiard==3.5.0.2
+celery==4.0.0
+Django==1.10.3
+django-celery==3.1.17
+django-websocket-redis==0.4.7
+djangorestframework==3.5.3
+gevent==1.1.2
+greenlet==0.4.10
+kombu==4.0.0
+Pillow==3.4.2
+pytz==2016.7
+redis==2.10.5
+six==1.10.0
+vine==1.1.3

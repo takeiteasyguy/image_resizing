@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Images Table</title>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/ws4redis.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/main.js"></script>
+</head>
+<body>
+    <table border="true">
+        <tr>
+            <td>Image ID</td>
+            <td>Time of getting</td>
+            <td>Time of end converting job</td>
+        </tr>
+            {% for image in images %}
+                <tr>
+                    <td>{{ image.id }}</td>
+                    <td>{{ image.getting_time }}</td>
+                    <td>{{ image.time_of_end_convering_job }}</td>
+                </tr>
+            {% endfor %}
+    </table>
+</body>
+</html>
